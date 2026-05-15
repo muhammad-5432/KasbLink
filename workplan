@@ -1,0 +1,58 @@
+## Create Apps
+
+```bash
+python manage.py startapp users
+python manage.py startapp jobs
+python manage.py startapp reviews
+python manage.py startapp applications
+python manage.py startapp common
+
+User (AbstractUser)
+  ├── role: [worker, customer, admin]
+  ├── phone: CharField (unique)
+  ├── district: FK → District
+  └── is_verified: BooleanField
+
+WorkerProfile
+  ├── user: OneToOne → User
+  ├── skills: M2M → TradeCategory
+  ├── bio: TextField
+  ├── hourly_rate: DecimalField
+  ├── experience_years: IntegerField
+  ├── rating: DecimalField (computed)
+  └── portfolio_images: reverse FK
+
+JobListing
+  ├── customer: FK → User
+  ├── category: FK → TradeCategory
+  ├── title, description: CharField/TextField
+  ├── district: FK → District
+  ├── budget: DecimalField
+  ├── urgency: [normal, urgent, asap]
+  └── status: [open, in_progress, completed, cancelled]
+
+JobApplication
+  ├── job: FK → JobListing
+  ├── worker: FK → User
+  ├── cover_note: TextField
+  ├── proposed_price: DecimalField
+  └── status: [pending, accepted, rejected]
+
+Review
+  ├── job: FK → JobListing
+  ├── reviewer: FK → User
+  ├── reviewee: FK → User
+  ├── rating: IntegerField (1–5)
+  └── comment: TextField
+
+Message
+  ├── conversation: FK → Conversation
+  ├── sender: FK → User
+  ├── content: TextField
+  └── timestamp: DateTimeField
+
+TradeCategory
+  └── name_uz, name_ru: CharField  (e.g. "Santexnik", "Электрик")
+
+District
+  └── name_uz, name_ru: CharField  (e.g. "Chilonzor", "Yunusobod")
