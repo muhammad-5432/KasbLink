@@ -110,7 +110,7 @@ Clients can search and filter workers by:
 
 * category
 * service type
-* location
+* locationUser
 * rating
 
 ---
@@ -198,7 +198,7 @@ statuses.
 The first MVP version includes:
 
 * Authentication system
-* Worker listing
+* Worker listingUser
 * Order creation
 * Order status workflow
 * Review system
@@ -235,7 +235,7 @@ Handles the complete service workflow:
 ---
 
 ## 3. Trust System
-
+User
 Improves platform reliability through:
 
 * ratings

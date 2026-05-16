@@ -1,6 +1,6 @@
 from django.contrib.auth.models import AbstractUser
 from django.db.models import CharField, TextChoices, Model, DecimalField, PositiveIntegerField, \
-    BooleanField, OneToOneField, CASCADE, ImageField
+    BooleanField, OneToOneField, CASCADE, ImageField, ForeignKey, TextField, DateTimeField
 
 from apps.models.managers import CustomUserManager
 
@@ -25,3 +25,14 @@ class WorkerProfile(Model):
     completed_orders_count = PositiveIntegerField(default=0)
     is_available = BooleanField(default=True)
     user = OneToOneField('apps.User', CASCADE, related_name='worker_profile')
+
+
+class Portfolio(Model):
+    worker = ForeignKey("apps.WorkerProfile", on_delete=CASCADE, related_name='portfolio')
+
+    title = CharField(max_length=150)
+
+    description = TextField()
+    image = ImageField(upload_to='portfolio/%Y/%m/%d')
+
+    created_at = DateTimeField(auto_now_add=True)
