@@ -65,7 +65,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'root.wsgi.application'
-# AUTH_USER_MODEL = 'apps.User'
+AUTH_USER_MODEL = 'apps.User'
 
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
@@ -140,9 +140,9 @@ REST_FRAMEWORK = {
 #     'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
 # }
 
-# SPECTACULAR_SETTINGS = {
-#     'TITLE': 'Your Project API',
-#     'DESCRIPTION': 'Your project description',
-#     'VERSION': '1.0.0',
-#     'SERVE_INCLUDE_SCHEMA': False,
-# }
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Your Project API',
+    'DESCRIPTION': 'Your project description',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
+}
