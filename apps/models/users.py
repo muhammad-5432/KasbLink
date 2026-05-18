@@ -21,6 +21,7 @@ class WorkerProfile(Model):
     bio = CharField(max_length=150)
     latitude = CharField(max_length=15)
     longitude = CharField(max_length=15)
+    city = CharField(max_length=20)
     rating = DecimalField(max_digits=1, decimal_places=1)
     completed_orders_count = PositiveIntegerField(default=0)
     is_available = BooleanField(default=True)

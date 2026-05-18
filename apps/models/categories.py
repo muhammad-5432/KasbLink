@@ -12,5 +12,5 @@ class Service(Model):
     min_price = PositiveIntegerField()
     max_price = PositiveIntegerField()
     description = TextField()
-    worker = ForeignKey('apps.WorkerProfile', CASCADE, related_name='services')
+    worker = ForeignKey('apps.WorkerProfile', CASCADE, related_name='worker_services')
     category = ForeignKey('apps.Category', CASCADE, related_name='services')

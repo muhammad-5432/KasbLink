@@ -1,10 +1,12 @@
 from rest_framework import serializers
+from rest_framework.serializers import ModelSerializer
+
 from apps.models import (
     Category, Service, Conversation, Message, Order, OrderImage,
     Review, ReviewImage, Favourite, User, WorkerProfile, Portfolio
 )
 
-class UserSerializer(serializers.ModelSerializer):
+class UserSerializer(ModelSerializer):
     class Meta:
         model = User
         fields = ['id', 'username', 'email', 'first_name', 'last_name', 'role', 'phone_number', 'profile_image']
@@ -13,7 +15,7 @@ class UserSerializer(serializers.ModelSerializer):
 
 
 
-class WorkerProfileSerializer(serializers.ModelSerializer):
+class WorkerProfileSerializer(ModelSerializer):
     user = UserSerializer(read_only=True)
 
     class Meta:
@@ -21,43 +23,43 @@ class WorkerProfileSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class PortfolioSerializer(serializers.ModelSerializer):
+class PortfolioSerializer(ModelSerializer):
     class Meta:
         model = Portfolio
         fields = '__all__'
 
 
-class CategorySerializer(serializers.ModelSerializer):
+class CategorySerializer(ModelSerializer):
     class Meta:
         model = Category
         fields = '__all__'
 
 
-class ServiceSerializer(serializers.ModelSerializer):
+class ServiceSerializer(ModelSerializer):
     class Meta:
         model = Service
         fields = '__all__'
 
 
-class ConversationSerializer(serializers.ModelSerializer):
+class ConversationSerializer(ModelSerializer):
     class Meta:
         model = Conversation
         fields = '__all__'
 
 
-class MessageSerializer(serializers.ModelSerializer):
+class MessageSerializer(ModelSerializer):
     class Meta:
         model = Message
         fields = '__all__'
 
 
-class OrderImageSerializer(serializers.ModelSerializer):
+class OrderImageSerializer(ModelSerializer):
     class Meta:
         model = OrderImage
         fields = '__all__'
 
 
-class OrderSerializer(serializers.ModelSerializer):
+class OrderSerializer(ModelSerializer):
     order_images = OrderImageSerializer(many=True, read_only=True)
 
     class Meta:
@@ -65,13 +67,13 @@ class OrderSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class ReviewImageSerializer(serializers.ModelSerializer):
+class ReviewImageSerializer(ModelSerializer):
     class Meta:
         model = ReviewImage
         fields = '__all__'
 
 
-class ReviewSerializer(serializers.ModelSerializer):
+class ReviewSerializer(ModelSerializer):
     review_images = ReviewImageSerializer(many=True, read_only=True)
 
     class Meta:
@@ -79,7 +81,7 @@ class ReviewSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class FavouriteSerializer(serializers.ModelSerializer):
+class FavouriteSerializer(ModelSerializer):
     class Meta:
         model = Favourite
         fields = '__all__'
