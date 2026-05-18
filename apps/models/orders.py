@@ -22,6 +22,10 @@ class Order(Model):
     created_at = DateTimeField(auto_now_add=True)
     updated_at = DateTimeField(auto_now=True)
 
+    client = ForeignKey("apps.User", on_delete=CASCADE, related_name='client_orders')
+    worker = ForeignKey("apps.WorkerProfile", on_delete=CASCADE, related_name='worker_orders')
+    service = ForeignKey("apps.Service", on_delete=CASCADE, related_name='orders')
+
 
 class OrderImage(Model):
     order = ForeignKey("apps.Order", on_delete=CASCADE, related_name="order_images")
