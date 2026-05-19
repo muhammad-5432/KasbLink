@@ -3,16 +3,15 @@ from django.db.models import Model, CharField, TextField, DecimalField, DateFiel
 from django.db.models.enums import TextChoices
 
 
-class OrderStatus(TextChoices):
-    PENDING = "pending", "Pending"
-    ACCEPTED = "accepted", "Accepted"
-    IN_PROGRESS = "in_progress", "In Progress"
-    COMPLETED = "completed", "Completed"
-    CANCELLED = "cancelled", "Cancelled"
-    REJECTED = "rejected", "Rejected"
-
-
 class Order(Model):
+    class OrderStatus(TextChoices):
+        PENDING = "pending", "Pending"
+        ACCEPTED = "accepted", "Accepted"
+        IN_PROGRESS = "in_progress", "In Progress"
+        COMPLETED = "completed", "Completed"
+        CANCELLED = "cancelled", "Cancelled"
+        REJECTED = "rejected", "Rejected"
+
     title = CharField(max_length=100)
     description = TextField()
     offered_price = DecimalField(max_digits=10, decimal_places=2)
