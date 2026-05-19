@@ -14,9 +14,7 @@ class Order(Model):
 
     title = CharField(max_length=100)
     description = TextField()
-    offered_price = DecimalField(max_digits=10, decimal_places=2)
     address = CharField(max_length=100)
-    schedule_date = DateField()
     status = CharField(max_length=20, choices=OrderStatus.choices, default=OrderStatus.PENDING)
     created_at = DateTimeField(auto_now_add=True)
     updated_at = DateTimeField(auto_now=True)
