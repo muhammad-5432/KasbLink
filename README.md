@@ -1,275 +1,84 @@
-# KasbLink
+📝 KasbLink — Yakuniy Minimalistik Tech Spec (v2.0)
+1. Project Idea (Loyiha g‘oyasi)
+KasbLink — bu santexnik, usta, elektrik kabi qisqa muddatli va kunlik ishlar qiluvchi offline freelancelar (Worker) uchun buyurtma topish, hamda usta qidirayotgan mijozlar (Client) uchun o‘z hududiga yaqin mutaxassislarni ularning real tajribasi, ijtimoiy postlari va reytingiga qarab topishga mo‘ljallangan minimalistik platforma. Ilova interfeysi va navigatsiyasi Instagram mantiqiga asoslanadi.
 
-## Overview
+2. User Roles & Privacy (Rollari va Maxfiylik)
+Client (Mijoz): Ish e’loni beradi yoki usta qidiradi. Profil mutlaqo Yopiq (Private). Hech kim uning sahifasiga kira olmaydi. Sharhlar tarixida faqat ismi va familiyasining birinchi harfi ko‘rinadi (Asrorbek O.). Aniq lokatsiyasi faqat usta bilan kelishilgandan keyin chatda yuboriladi.
 
-**KasbLink** is a service marketplace platform designed for offline freelancers such as plumbers, electricians, repair specialists, and home maintenance workers.
+Worker (Usta): O‘z xizmatlarini joylaydi, mijozlar e’loniga taklif yuboradi. Profil Ochiq (Public). Ismi, rasmi, mutaxassisligi, reytingi va postlari hamma uchun ko‘rinadi. Worker baribir tizim uchun "User" hisoblanadi (shuning uchun u boshqa workerlarning xizmatlaridan foydalana oladi).
 
-The platform connects clients with nearby skilled workers based on:
+Admin: Tizim boshqaruvi, foydalanuvchilar bazasi va shubhali reytinglarni moderatsiya qilish.
 
-* experience,
-* ratings,
-* reviews,
-* completed work history,
-* and service categories.
+3. Minimalistik Sahifalar Tuzilishi (Instagram-style Navigation)
+Ilovaning pastki qismida jami 4 ta asosiy sahifa (Tab) bo‘ladi. Foydalanuvchining roliga ko‘ra (Client yoki Worker) sahifalar mazmuni avtomatik o‘zgaradi:
 
-Workers can showcase their services and receive job requests, while clients can quickly find trusted professionals for short-term or local service tasks.
+📱 1-Sahifa: Main Feed (Asosiy Lenta)
+E’lonlar yonma-yon emas, tepadan pastga (Single Column Feed) formatida joylashadi. Ikki xil e’lon aralashib ketmaydi:
 
----
+Client uchun (Service List): Ustalar xizmatlari e’loni chiqadi. Tepada aniq filtrlar (Kategoriya, reyting) bo‘ladi. E’londa ustaning kichik rasmi, ismi, reytingi, xizmat tavsifi (~75 so‘z) va min-max narxi ko‘rinadi. Sana/vaqt yo‘q.
 
-# Project Goals
+Worker uchun (Job Board & Service List):
 
-KasbLink aims to solve two main problems:
+Job Board: Mijozlar qoldirgan ish e’lonlari chiqadi. E’londa: qilinishi kerak bo‘lgan ish tavsifi, budjet va ish bajarilishi kerak bo‘lgan sana va vaqt (majburiy) ko‘rinadi.
 
-### For Clients
+Service List: Worker boshqa workerlarning xizmatlaridan foydalana oladi, ya'ni u xuddi mijoz kabi boshqa ustalarning xizmatlari ro‘yxatini ko‘ra oladi.
 
-* Finding reliable local workers quickly
-* Comparing professionals by rating, experience, and previous work
-* Managing service requests in a structured way
+Filtrlar: Kasblar bo‘yicha (Default: Workerning o‘z kasblari bo‘yicha filterlangan turadi, lekin o‘zi o‘zgartira oladi), min-max narx bo‘yicha, lokatsiya bo‘yicha (tuman yoki shahar bo‘yicha, default workerning regioni va tumani bo‘yicha).
 
-### For Workers
+📱 2-Sahifa: Explore Feed (Kashfiyot / Ijtimoiy Lenta)
+Xuddi Instagram kabi, ustalarning portfolio va ish jarayonlari rasmlari/videolari turadigan ijtimoiy sahifa. Bu yerda Grid (eniga va bo‘yiga multiple) format ishlatiladi (Hech qanday Reels bo‘lmaydi, faqat klassik postlar).
 
-* Receiving new job opportunities
-* Building a professional profile and reputation
-* Managing orders and communication with clients
+Mantiq: Mijoz o‘z hududidagi ustalarning qilgan ishlarini vizual ko‘rib, post tagidagi "Bog'lanish" tugmasi orqali to‘g‘ridan-to‘g‘ri usta bilan chatga o‘tishi mumkin. Postlarga Like bosish va Comment yozish mumkin.
 
----
+📱 3-Sahifa: Chat & Orders (Aloqa bo‘limi)
+Mijoz va usta o‘rtasidagi barcha yozishmalar va joriy buyurtma statuslari jamlanadigan yagona oyna. Ortiqcha sahifalarni kamaytirish uchun chat va buyurtma jarayoni shu yerning o‘zida boshqariladi.
 
-# User Roles
+📱 4-Sahifa: Profile (Profil sahifasi)
 
-## Client
+Client Profil (Yopiq): Faqat o‘zining sozlamalari, "Sevimlilar" (Favourites) ro‘yxati va "Mening buyurtmalarim tarixi" (o‘zi ko‘rishi uchun) joylashadi.
 
-Clients can:
+Worker Profil (Ochiq): Ustaning bosh sahifasi. Tepada: rasm, ism, bio, hudud va reyting (Rating). Pastki qismida 2 ta ustun (Tab) bo‘ladi:
 
-* create service requests/orders;
-* search for workers based on category, location, and rating;
-* negotiate service details and pricing with workers;
-* leave reviews and ratings after order completion;
-* optionally upload images related to completed work.
+Postlar (Grid): Ustaning o‘zi yuklagan ijtimoiy postlari, foydali maslahatlari va rasmlari (Instagram profili kabi, multiple grid).
 
----
+Bajarilgan ishlar (List): Faqat KasbLink orqali muvaffaqiyatli bitgan real buyurtmalar xronologiyasi. Bu yerda mijoz yozgan sharh, qo‘ygan yulduzchasi va ish rasmi o‘chirilmaydigan hujjat bo‘lib turadi.
 
-## Worker
+4. Trust & Rating System (Ishonch tizimi)
+Yangi usta himoyasi: Dastlabki 5 ta sharh (review) yig‘ilguncha ustaning o‘rtacha reyting raqami ko‘rsatilmaydi, o‘rniga "Yangi usta" (New) nishoni turadi. 5 ta sharhdan keyin o‘rtacha ball (⭐ 4.8) ochiladi.
 
-Workers can:
+5. Booking & Order System (Buyurtmalar mantiqi)
+Mijoz ustaga so‘rov yuborganda: Chat yoki tel orqali kelishilgach, mijoz usta e’lonidagi "So‘rov yuborish" tugmasini bosadi. Status: Kutilmoqda. Usta tasdiqlasa -> Jarayonda.
 
-* create and manage their service profiles;
-* accept or reject incoming orders;
-* complete service tasks;
-* display their experience, pricing, and completed work history.
+Usta mijoz e’loniga taklif berganda: Usta e’lonni ko‘rib chatga kiradi va taklif yuboradi (Kunlik limit: 10-15 ta taklif). Mijoz qabul qilsa, unga aniq lokatsiya ochiladi va status -> Jarayonda bo‘ladi.
 
----
+Statuslar: Kutilmoqda (Pending) ➔ Jarayonda (In Progress) ➔ Bajarildi (Completed) yoki Rad etildi (Cancelled — faqat boshlanishidan oldin, izoh ixtiyoriy, e'lon o'chadi).
 
-## Admin
+6. Review & Job Completion (Ishni tezkor yakunlash)
+Ish Bajarildi bo‘lgach, jarayon "jaydari" va tez o‘tishi uchun tizim quyidagicha ishlaydi:
 
-Admins are responsible for:
+Worker uchun: Matn yozmaydi, tayyor teglarni tanlaydi (Masalan: #krantuzatish, #gofra). Rasm yuklash ixtiyoriy. Bir tugma bilan buni Explore Feedga post qilib yuborishi ham mumkin.
 
-* managing the platform and users;
-* monitoring system activity;
-* handling reports and platform issues;
-* improving platform stability and security.
+Client uchun (Majburiy): 1 dan 5 gacha yulduzcha tanlaydi va tayyor fikr-teglarni bosadi (Masalan: [xf] Tez keldi, [xf] Sifatli ish). Matnli izoh yozish esa ixtiyoriy.
 
----
+7. Database Schema (Asosiy Jadvallar Kontsepti)
+User (id, phone, password, role, region_id, district_id, created_at)
 
-# Core Features
+WorkerProfile (id, user_id, bio, overall_rating, review_count, region, district, location_geo)
 
-## Authentication
+Service (id, worker_id, category_id, description, min_price, max_price)
 
-* User Registration
-* User Login
-* JWT Authentication
-* Role-Based Access Control
+Category (id, name_uz, icon)
 
----
+Order (id, client_id, worker_id, service_id, status, scheduled_at, price, location_snapshot)
 
-## Worker Profiles
+Post (id, worker_id, order_id_is_verified, media_url, content, likes_count, created_at)
 
-Each worker profile includes:
+Comment (id, post_id, user_id, content, created_at)
 
-* bio/description
-* location
-* rating
-* experience
-* offered services
+Like (id, post_id, user_id)
 
----
+Review (id, order_id, client_id, worker_id, rating, tags, comment, created_at)
 
-## Services
+Favorite (id, client_id, worker_id)
 
-Each service contains:
-
-* service title
-* description
-* minimum price
-* maximum price
-
----
-
-## Search & Filtering
-
-Clients can search and filter workers by:
-
-* category
-* service type
-* locationUser
-* rating
-
----
-
-## Order / Booking System
-
-### Order Status Flow
-
-#### Pending
-
-The order has been created but not yet accepted by a worker.
-
-#### Accepted
-
-The worker accepted the order and agreed to start working.
-
-#### In Progress
-
-The service is currently being performed.
-
-#### Completed
-
-The work has been fully completed.
-
-#### Cancelled / Rejected
-
-The order was cancelled or rejected.
-
----
-
-## Reviews & Ratings
-
-* Reviews can only be created after an order is completed.
-* A review may contain:
-
-  * rating
-  * comment
-  * optional images
-
----
-
-## Favorites
-
-Clients can save workers to their favorites list.
-
----
-
-## Real-Time Chat
-
-Built-in messaging system between clients and workers.
-
----
-
-# Database Structure (Basic Idea)
-
-Main entities/tables:
-
-* User
-* WorkerProfile
-* Category
-* Service
-* Order
-* Review
-* Message
-* Favorite
-
----
-
-# Business Logic Rules
-
-* Workers can only manage their own services.
-* Clients can only manage their own orders.
-* Reviews are allowed only for completed orders.
-* Orders can only be cancelled while in:
-
-  * Pending
-  * Accepted
-
-statuses.
-
----
-
-# MVP Scope
-
-The first MVP version includes:
-
-* Authentication system
-* Worker listingUser
-* Order creation
-* Order status workflow
-* Review system
-
----
-
-# System Architecture Concept
-
-KasbLink is built around three core systems:
-
----
-
-## 1. Marketplace Engine
-
-Responsible for matching clients with workers.
-
-Includes:
-
-* location-based discovery
-* category filtering
-* rating-based ranking
-
----
-
-## 2. Order Management System
-
-Handles the complete service workflow:
-
-* order creation
-* acceptance
-* processing
-* completion
-
----
-
-## 3. Trust System
-User
-Improves platform reliability through:
-
-* ratings
-* reviews
-* worker reputation
-* completed order history
-
----
-
-# Future Improvements
-
-Potential future features:
-
-* online payments
-* worker verification
-* AI-based worker recommendations
-* portfolio/gallery system
-* push notifications
-* dispute resolution system
-* advanced analytics dashboard
-
----
-
-# Tech Stack (Planned)
-
-* Backend: Django + Django REST Framework
-* Authentication: JWT
-* Database: PostgreSQL
-* Realtime Communication: WebSocket / Django Channels
-* Frontend: React or Next.js
-
----
-
-# Vision
-
-KasbLink aims to become a trusted local services ecosystem where skilled workers and clients can easily connect, collaborate, and build long-term trust.
-    
+Message (id, chat_id, sender_id, text, location_geo, created_at)
