@@ -1,0 +1,1305 @@
+[
+  {
+    "model": "apps.section",
+    "pk": 1,
+    "fields": {
+      "name": "Qurilish va ta'mirlash"
+    }
+  },
+  {
+    "model": "apps.section",
+    "pk": 2,
+    "fields": {
+      "name": "Avto xizmatlar"
+    }
+  },
+  {
+    "model": "apps.section",
+    "pk": 3,
+    "fields": {
+      "name": "Texnika ta'miri"
+    }
+  },
+
+  {
+    "model": "apps.job",
+    "pk": 1,
+    "fields": {
+      "section": 1,
+      "name": "Santexnik"
+    }
+  },
+  {
+    "model": "apps.job",
+    "pk": 2,
+    "fields": {
+      "section": 1,
+      "name": "Elektrik"
+    }
+  },
+  {
+    "model": "apps.job",
+    "pk": 3,
+    "fields": {
+      "section": 1,
+      "name": "Suvoqchi va bo'yoqchi"
+    }
+  },
+  {
+    "model": "apps.job",
+    "pk": 4,
+    "fields": {
+      "section": 1,
+      "name": "Plitkachi"
+    }
+  },
+  {
+    "model": "apps.job",
+    "pk": 5,
+    "fields": {
+      "section": 1,
+      "name": "Gipsokartonchi"
+    }
+  },
+  {
+    "model": "apps.job",
+    "pk": 6,
+    "fields": {
+      "section": 1,
+      "name": "Payvandchi"
+    }
+  },
+  {
+    "model": "apps.job",
+    "pk": 7,
+    "fields": {
+      "section": 1,
+      "name": "G'ishtchi"
+    }
+  },
+  {
+    "model": "apps.job",
+    "pk": 8,
+    "fields": {
+      "section": 1,
+      "name": "Duradgor"
+    }
+  },
+  {
+    "model": "apps.job",
+    "pk": 9,
+    "fields": {
+      "section": 1,
+      "name": "Isitish tizimi ustasi"
+    }
+  },
+  {
+    "model": "apps.job",
+    "pk": 10,
+    "fields": {
+      "section": 1,
+      "name": "Konditsioner ustasi"
+    }
+  },
+  {
+    "model": "apps.job",
+    "pk": 11,
+    "fields": {
+      "section": 1,
+      "name": "Tom ustasi"
+    }
+  },
+  {
+    "model": "apps.job",
+    "pk": 12,
+    "fields": {
+      "section": 1,
+      "name": "Pol ustasi"
+    }
+  },
+  {
+    "model": "apps.job",
+    "pk": 13,
+    "fields": {
+      "section": 1,
+      "name": "Beton va asfalt ustasi"
+    }
+  },
+
+  {
+    "model": "apps.job",
+    "pk": 14,
+    "fields": {
+      "section": 2,
+      "name": "Avto elektrik"
+    }
+  },
+  {
+    "model": "apps.job",
+    "pk": 15,
+    "fields": {
+      "section": 2,
+      "name": "Dvigatel ustasi"
+    }
+  },
+  {
+    "model": "apps.job",
+    "pk": 16,
+    "fields": {
+      "section": 2,
+      "name": "Kuzov ustasi"
+    }
+  },
+  {
+    "model": "apps.job",
+    "pk": 17,
+    "fields": {
+      "section": 2,
+      "name": "Karobka ustasi"
+    }
+  },
+  {
+    "model": "apps.job",
+    "pk": 18,
+    "fields": {
+      "section": 2,
+      "name": "Shinomontaj ustasi"
+    }
+  },
+  {
+    "model": "apps.job",
+    "pk": 19,
+    "fields": {
+      "section": 2,
+      "name": "Texnik ko'rik ustasi"
+    }
+  },
+  {
+    "model": "apps.job",
+    "pk": 20,
+    "fields": {
+      "section": 2,
+      "name": "Evakuator"
+    }
+  },
+  {
+    "model": "apps.job",
+    "pk": 21,
+    "fields": {
+      "section": 2,
+      "name": "Moy almashtirish ustasi"
+    }
+  },
+
+  {
+    "model": "apps.job",
+    "pk": 22,
+    "fields": {
+      "section": 3,
+      "name": "Konditsioner ta'mirchisi"
+    }
+  },
+  {
+    "model": "apps.job",
+    "pk": 23,
+    "fields": {
+      "section": 3,
+      "name": "Kir yuvish mashinasi ta'mirchisi"
+    }
+  },
+  {
+    "model": "apps.job",
+    "pk": 24,
+    "fields": {
+      "section": 3,
+      "name": "Muzlatgich ta'mirchisi"
+    }
+  },
+  {
+    "model": "apps.job",
+    "pk": 25,
+    "fields": {
+      "section": 3,
+      "name": "Televizor ta'mirchisi"
+    }
+  },
+  {
+    "model": "apps.job",
+    "pk": 26,
+    "fields": {
+      "section": 3,
+      "name": "Gaz plita ta'mirchisi"
+    }
+  },
+  {
+    "model": "apps.job",
+    "pk": 27,
+    "fields": {
+      "section": 3,
+      "name": "Suv isitgich ta'mirchisi"
+    }
+  },
+  {
+    "model": "apps.job",
+    "pk": 28,
+    "fields": {
+      "section": 3,
+      "name": "Kompyuter / Noutbuk ta'mirchisi"
+    }
+  },
+  {
+    "model": "apps.job",
+    "pk": 29,
+    "fields": {
+      "section": 3,
+      "name": "Telefon ta'mirchisi"
+    }
+  },
+  {
+    "model": "apps.job",
+    "pk": 30,
+    "fields": {
+      "section": 3,
+      "name": "Changyutgich ta'mirchisi"
+    }
+  },
+  {
+    "model": "apps.job",
+    "pk": 31,
+    "fields": {
+      "section": 3,
+      "name": "Mikroto'lqinli pech ta'mirchisi"
+    }
+  },
+
+  {
+    "model": "apps.service",
+    "pk": 1,
+    "fields": {
+      "job": 1,
+      "name": "Oqishni bartaraf etish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 2,
+    "fields": {
+      "job": 1,
+      "name": "Quvurlarni yotqizish / tarmoqlash"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 3,
+    "fields": {
+      "job": 1,
+      "name": "Santexnika o'rnatish (unitaz, rakovinka, vanna)"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 4,
+    "fields": {
+      "job": 1,
+      "name": "Tiqinni bartaraf etish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 5,
+    "fields": {
+      "job": 1,
+      "name": "Suv isitgich o'rnatish / ta'mirlash"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 6,
+    "fields": {
+      "job": 1,
+      "name": "Dush kabinasi o'rnatish"
+    }
+  },
+
+  {
+    "model": "apps.service",
+    "pk": 7,
+    "fields": {
+      "job": 2,
+      "name": "Chiroq / lyustra o'rnatish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 8,
+    "fields": {
+      "job": 2,
+      "name": "Rozetka o'rnatish / ta'mirlash"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 9,
+    "fields": {
+      "job": 2,
+      "name": "Kalit o'rnatish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 10,
+    "fields": {
+      "job": 2,
+      "name": "Elektr panel bilan ishlash"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 11,
+    "fields": {
+      "job": 2,
+      "name": "Kabel tortish / elektr sxema yotqizish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 12,
+    "fields": {
+      "job": 2,
+      "name": "Maishiy texnikani ulash"
+    }
+  },
+
+  {
+    "model": "apps.service",
+    "pk": 13,
+    "fields": {
+      "job": 3,
+      "name": "Devorni suvoqlash"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 14,
+    "fields": {
+      "job": 3,
+      "name": "Devorni bo'yash"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 15,
+    "fields": {
+      "job": 3,
+      "name": "Shiftni bo'yash / suvoqlash"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 16,
+    "fields": {
+      "job": 3,
+      "name": "Polni tekislash"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 17,
+    "fields": {
+      "job": 3,
+      "name": "Dekorativ suvoq"
+    }
+  },
+
+  {
+    "model": "apps.service",
+    "pk": 18,
+    "fields": {
+      "job": 4,
+      "name": "Hammomga plitka terish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 19,
+    "fields": {
+      "job": 4,
+      "name": "Oshxonaga plitka terish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 20,
+    "fields": {
+      "job": 4,
+      "name": "Pol plitka terish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 21,
+    "fields": {
+      "job": 4,
+      "name": "Devor plitka terish"
+    }
+  },
+
+  {
+    "model": "apps.service",
+    "pk": 22,
+    "fields": {
+      "job": 5,
+      "name": "Gipsokarto'n devor qurish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 23,
+    "fields": {
+      "job": 5,
+      "name": "Gipsokarto'n shift qilish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 24,
+    "fields": {
+      "job": 5,
+      "name": "Nishalar va dekorativ shakllar yasash"
+    }
+  },
+
+  {
+    "model": "apps.service",
+    "pk": 25,
+    "fields": {
+      "job": 6,
+      "name": "Metall konstruksiya payvandlash"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 26,
+    "fields": {
+      "job": 6,
+      "name": "Darvoza / to'siq payvandlash"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 27,
+    "fields": {
+      "job": 6,
+      "name": "Quvur payvandlash"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 28,
+    "fields": {
+      "job": 6,
+      "name": "Armatura payvandlash"
+    }
+  },
+
+  {
+    "model": "apps.service",
+    "pk": 29,
+    "fields": {
+      "job": 7,
+      "name": "G'isht terish (devor, to'siq)"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 30,
+    "fields": {
+      "job": 7,
+      "name": "Pechka / kamin g'ishtlash"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 31,
+    "fields": {
+      "job": 7,
+      "name": "Ustun va tayanchlar qurish"
+    }
+  },
+
+  {
+    "model": "apps.service",
+    "pk": 32,
+    "fields": {
+      "job": 8,
+      "name": "Eshik o'rnatish / ta'mirlash"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 33,
+    "fields": {
+      "job": 8,
+      "name": "Deraza o'rnatish / ta'mirlash"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 34,
+    "fields": {
+      "job": 8,
+      "name": "Pollarga taxta yotqizish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 35,
+    "fields": {
+      "job": 8,
+      "name": "Mebel yig'ish / ta'mirlash"
+    }
+  },
+
+  {
+    "model": "apps.service",
+    "pk": 36,
+    "fields": {
+      "job": 9,
+      "name": "Radiator o'rnatish / almashtirish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 37,
+    "fields": {
+      "job": 9,
+      "name": "Qozon o'rnatish / ta'mirlash"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 38,
+    "fields": {
+      "job": 9,
+      "name": "Quvurlar yotqizish (isitish)"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 39,
+    "fields": {
+      "job": 9,
+      "name": "Issiq pol o'rnatish"
+    }
+  },
+
+  {
+    "model": "apps.service",
+    "pk": 40,
+    "fields": {
+      "job": 10,
+      "name": "Konditsioner o'rnatish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 41,
+    "fields": {
+      "job": 10,
+      "name": "Konditsioner demontaj qilish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 42,
+    "fields": {
+      "job": 10,
+      "name": "Konditsioner ta'mirlash"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 43,
+    "fields": {
+      "job": 10,
+      "name": "Texnik xizmat (tozalash, gaz to'ldirish)"
+    }
+  },
+
+  {
+    "model": "apps.service",
+    "pk": 44,
+    "fields": {
+      "job": 11,
+      "name": "Tom yopish (shifer, profnastil, metall cherepitsa)"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 45,
+    "fields": {
+      "job": 11,
+      "name": "Tom suvi o'tkazmasligini ta'minlash"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 46,
+    "fields": {
+      "job": 11,
+      "name": "Tomdagi oqishni bartaraf etish"
+    }
+  },
+
+  {
+    "model": "apps.service",
+    "pk": 47,
+    "fields": {
+      "job": 12,
+      "name": "Laminat yotqizish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 48,
+    "fields": {
+      "job": 12,
+      "name": "Parket yotqizish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 49,
+    "fields": {
+      "job": 12,
+      "name": "Nalivnoy pol qilish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 50,
+    "fields": {
+      "job": 12,
+      "name": "Linoleum yotqizish"
+    }
+  },
+
+  {
+    "model": "apps.service",
+    "pk": 51,
+    "fields": {
+      "job": 13,
+      "name": "Betonlash (poydevor, styajka)"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 52,
+    "fields": {
+      "job": 13,
+      "name": "Asfalt yotqizish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 53,
+    "fields": {
+      "job": 13,
+      "name": "Beton ishlarini ta'mirlash"
+    }
+  },
+
+  {
+    "model": "apps.service",
+    "pk": 54,
+    "fields": {
+      "job": 14,
+      "name": "Diagnostika va ta'mirlash"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 55,
+    "fields": {
+      "job": 14,
+      "name": "Signalizatsiya o'rnatish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 56,
+    "fields": {
+      "job": 14,
+      "name": "Avtozapusk o'rnatish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 57,
+    "fields": {
+      "job": 14,
+      "name": "Akkumulyator almashtirish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 58,
+    "fields": {
+      "job": 14,
+      "name": "Fara va chiroqlarni ta'mirlash / almashtirish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 59,
+    "fields": {
+      "job": 14,
+      "name": "Avtomobilni ochish"
+    }
+  },
+
+  {
+    "model": "apps.service",
+    "pk": 60,
+    "fields": {
+      "job": 15,
+      "name": "Dvigatel diagnostikasi"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 61,
+    "fields": {
+      "job": 15,
+      "name": "Dvigatel kapital ta'miri"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 62,
+    "fields": {
+      "job": 15,
+      "name": "Moyni almashtirish (TO)"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 63,
+    "fields": {
+      "job": 15,
+      "name": "Dvigatel sohlantirish"
+    }
+  },
+
+  {
+    "model": "apps.service",
+    "pk": 64,
+    "fields": {
+      "job": 16,
+      "name": "Kuzov ta'miri (g'ijim, krashev)"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 65,
+    "fields": {
+      "job": 16,
+      "name": "Malyorlik (bo'yash)"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 66,
+    "fields": {
+      "job": 16,
+      "name": "Plastik detal ta'miri"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 67,
+    "fields": {
+      "job": 16,
+      "name": "Zangni tozalash va qayta bo'yash"
+    }
+  },
+
+  {
+    "model": "apps.service",
+    "pk": 68,
+    "fields": {
+      "job": 17,
+      "name": "AKPP ta'miri"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 69,
+    "fields": {
+      "job": 17,
+      "name": "MKPP ta'miri"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 70,
+    "fields": {
+      "job": 17,
+      "name": "Shlang va moy almashtirish"
+    }
+  },
+
+  {
+    "model": "apps.service",
+    "pk": 71,
+    "fields": {
+      "job": 18,
+      "name": "Shinani almashtirish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 72,
+    "fields": {
+      "job": 18,
+      "name": "Balansirovka"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 73,
+    "fields": {
+      "job": 18,
+      "name": "Vulkanizatsiya (teshik yamash)"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 74,
+    "fields": {
+      "job": 18,
+      "name": "Disk ta'miri"
+    }
+  },
+
+  {
+    "model": "apps.service",
+    "pk": 75,
+    "fields": {
+      "job": 19,
+      "name": "Umumiy diagnostika"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 76,
+    "fields": {
+      "job": 19,
+      "name": "Tormoz tizimini tekshirish / ta'mirlash"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 77,
+    "fields": {
+      "job": 19,
+      "name": "Xodovoy ta'miri"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 78,
+    "fields": {
+      "job": 19,
+      "name": "Moy va filtr almashtirish"
+    }
+  },
+
+  {
+    "model": "apps.service",
+    "pk": 79,
+    "fields": {
+      "job": 20,
+      "name": "Avtomobilni evakuatsiya qilish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 80,
+    "fields": {
+      "job": 20,
+      "name": "Yo'lda qolgan mashinani yetkazish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 81,
+    "fields": {
+      "job": 20,
+      "name": "Jarlikdan / botqoqdan tortib olish"
+    }
+  },
+
+  {
+    "model": "apps.service",
+    "pk": 82,
+    "fields": {
+      "job": 21,
+      "name": "Moy almashtirish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 83,
+    "fields": {
+      "job": 21,
+      "name": "Filtr almashtirish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 84,
+    "fields": {
+      "job": 21,
+      "name": "Texnik ko'rik (TO1, TO2)"
+    }
+  },
+
+  {
+    "model": "apps.service",
+    "pk": 85,
+    "fields": {
+      "job": 22,
+      "name": "Konditsioner ta'mirlash"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 86,
+    "fields": {
+      "job": 22,
+      "name": "Texnik xizmat"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 87,
+    "fields": {
+      "job": 22,
+      "name": "Freon to'ldirish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 88,
+    "fields": {
+      "job": 22,
+      "name": "Konditsioner tozalash"
+    }
+  },
+
+  {
+    "model": "apps.service",
+    "pk": 89,
+    "fields": {
+      "job": 23,
+      "name": "Kir yuvish mashinasini ta'mirlash"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 90,
+    "fields": {
+      "job": 23,
+      "name": "Nasos almashtirish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 91,
+    "fields": {
+      "job": 23,
+      "name": "Ten almashtirish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 92,
+    "fields": {
+      "job": 23,
+      "name": "Dastur bloki ta'miri"
+    }
+  },
+
+  {
+    "model": "apps.service",
+    "pk": 93,
+    "fields": {
+      "job": 24,
+      "name": "Muzlatgichni ta'mirlash"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 94,
+    "fields": {
+      "job": 24,
+      "name": "Freon to'ldirish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 95,
+    "fields": {
+      "job": 24,
+      "name": "Kompressor almashtirish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 96,
+    "fields": {
+      "job": 24,
+      "name": "Termostat ta'miri"
+    }
+  },
+
+  {
+    "model": "apps.service",
+    "pk": 97,
+    "fields": {
+      "job": 25,
+      "name": "Televizor ta'mirlash"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 98,
+    "fields": {
+      "job": 25,
+      "name": "Ekran almashtirish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 99,
+    "fields": {
+      "job": 25,
+      "name": "Plata ta'miri"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 100,
+    "fields": {
+      "job": 25,
+      "name": "Ovoz / tasvir muammolarini bartaraf etish"
+    }
+  },
+
+  {
+    "model": "apps.service",
+    "pk": 101,
+    "fields": {
+      "job": 26,
+      "name": "Gaz plita ta'mirlash"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 102,
+    "fields": {
+      "job": 26,
+      "name": "Gorelka tozalash / almashtirish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 103,
+    "fields": {
+      "job": 26,
+      "name": "Termostat ta'miri"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 104,
+    "fields": {
+      "job": 26,
+      "name": "Elektr plita ta'mirlash"
+    }
+  },
+
+  {
+    "model": "apps.service",
+    "pk": 105,
+    "fields": {
+      "job": 27,
+      "name": "Boiler ta'mirlash"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 106,
+    "fields": {
+      "job": 27,
+      "name": "Ten almashtirish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 107,
+    "fields": {
+      "job": 27,
+      "name": "Termostat almashtirish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 108,
+    "fields": {
+      "job": 27,
+      "name": "Boiler tozalash (nakip)"
+    }
+  },
+
+  {
+    "model": "apps.service",
+    "pk": 109,
+    "fields": {
+      "job": 28,
+      "name": "Diagnostika"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 110,
+    "fields": {
+      "job": 28,
+      "name": "Ekran almashtirish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 111,
+    "fields": {
+      "job": 28,
+      "name": "Klaviatura ta'miri / almashtirish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 112,
+    "fields": {
+      "job": 28,
+      "name": "Batareya almashtirish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 113,
+    "fields": {
+      "job": 28,
+      "name": "Virus tozalash / Windows o'rnatish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 114,
+    "fields": {
+      "job": 28,
+      "name": "HDD / SSD almashtirish"
+    }
+  },
+
+  {
+    "model": "apps.service",
+    "pk": 115,
+    "fields": {
+      "job": 29,
+      "name": "Ekran almashtirish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 116,
+    "fields": {
+      "job": 29,
+      "name": "Batareya almashtirish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 117,
+    "fields": {
+      "job": 29,
+      "name": "Tugmalar / razem ta'miri"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 118,
+    "fields": {
+      "job": 29,
+      "name": "Plata ta'miri"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 119,
+    "fields": {
+      "job": 29,
+      "name": "Suv tushgan telefonni tiklash"
+    }
+  },
+
+  {
+    "model": "apps.service",
+    "pk": 120,
+    "fields": {
+      "job": 30,
+      "name": "Changyutgich ta'mirlash"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 121,
+    "fields": {
+      "job": 30,
+      "name": "Motor almashtirish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 122,
+    "fields": {
+      "job": 30,
+      "name": "Shlang / filtr almashtirish"
+    }
+  },
+
+  {
+    "model": "apps.service",
+    "pk": 123,
+    "fields": {
+      "job": 31,
+      "name": "Mikroto'lqinli pechni ta'mirlash"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 124,
+    "fields": {
+      "job": 31,
+      "name": "Magnitron almashtirish"
+    }
+  },
+  {
+    "model": "apps.service",
+    "pk": 125,
+    "fields": {
+      "job": 31,
+      "name": "Eshik mexanizmi ta'miri"
+    }
+  }
+]
